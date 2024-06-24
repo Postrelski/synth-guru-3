@@ -1,0 +1,76 @@
+.itemsMidSection{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 30px;
+}
+
+.image_buttons_pair{
+    display:contents;
+}
+
+/* first adjustment for the item page (collapsed view)  */
+@media (max-width: 1200px) {
+    .itemsMidSection{
+        flex-direction: column-reverse;
+    }
+
+    .image_buttons_pair{
+        display: flex;
+        flex-direction: row-reverse;
+        justify-content: space-between;
+        margin-bottom: 10px;
+    }
+    .leftViewContainer{
+        text-align: left;
+        margin: auto;
+        width: 100%;
+    }
+}
+
+/* seond adjustment for the item page (mobile view)  */
+@media (max-width: 768px) {
+
+    .image_buttons_pair{
+        display: flex;
+        flex-direction: column;
+    }
+    .itemsMidSection{
+        display: flex;
+        flex-direction: column-reverse; 
+    }
+    .item_page_container{
+        text-align: center;
+        align-items: center;
+        margin: auto;
+    }
+
+    .leftViewContainer{
+        text-align: left;
+        margin: auto;
+        width: 100%;
+    }
+    .midViewImage{
+        margin: auto;
+    }
+    .right_view_container{
+        margin-bottom: 50px;
+    }
+}
+
+.arrows_container{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 100px;
+    font-size: 12px;
+    opacity: .4;
+    
+}
+.arrows_container a {
+    text-decoration: none;
+    color: black;
+}
+
+.item_page_container{
+    padding-left: 50px;
+    padding-right: 50px;
+}

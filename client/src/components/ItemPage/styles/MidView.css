@@ -1,0 +1,20 @@
+.midViewImage{
+    width: 500px;
+    height: 500px;
+}
+
+/* set up media query here */
+@media (max-width: 560px) {
+    .midViewImage{
+        width: 270px;
+        height: 270px;
+    }
+}
+
+/* for super small phones */
+@media (max-width: 380px) {
+    .midViewImage{
+        width: 200px;
+        height: 200px;
+    }
+}

@@ -1,0 +1,16 @@
+.deleteBTN{
+    margin-left: 10px;
+    cursor: pointer;
+    background: none;
+	/* color: inherit; */
+	border: none;
+	/* font: inherit; */
+	outline: inherit;
+}
+
+/* remove mergin left at small screens */
+@media (max-width: 440px) {
+    .deleteBTN{
+        margin-left: 0px;
+    }
+}

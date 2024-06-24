@@ -1,0 +1,100 @@
+.item_container{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    text-transform: uppercase;
+    padding: 10px;
+}
+
+.checkout_box{
+    text-align: right;
+    padding-right: 100px;
+}
+
+/* variable will trigger different class, depending classname obtained thru JSON file*/
+.cart_images1{
+    background-image: url("../../../public/images/pic1.png");
+    height: 150px;
+    width: 150px;
+    background-position: center;
+    background-repeat: no-repeat; 
+    background-size: contain;
+    cursor: pointer;
+}
+
+.cart_images2{
+    background-image: url("../../../public/images/pic2.png");
+    height: 150px;
+    width: 150px;
+    background-position: center;
+    background-repeat: no-repeat; 
+    background-size: contain;
+    cursor: pointer;
+}
+
+.cart_images3{
+    background-image: url("../../../public/images/pic3.png");
+    height: 150px;
+    width: 150px;
+    background-position: center;
+    background-repeat: no-repeat; 
+    background-size: contain;
+    cursor: pointer;
+}
+
+/* -------- */
+
+.align{
+    margin: auto;
+    background-position: center;
+}
+
+.cart_fold{
+    display:contents;
+}
+
+.buttons_container{
+    margin: auto;
+    margin-right: 0;
+}
+
+@media (max-width: 780px) {
+    .cart_fold{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        
+    }
+    .top_title{
+        padding-top: 10px;
+    }
+    .align{
+        margin: 0;
+    }
+    .buttons_container{
+        padding-left: 10px;
+    }
+}
+
+/* for super small phones */
+@media (max-width: 380px) {
+    .item_container{
+        flex-direction: column;
+    }
+    .buttons_container{
+        text-align: left;
+        margin: 0;
+        padding: 0;
+        margin-top: 10px;
+    }
+}
+
+.item_container p {
+    font-size: 14px;
+    opacity: .7;
+}
+
+.item_container:nth-child(odd){
+    background-color: #F4F4F9;
+}
+
