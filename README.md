@@ -1,4 +1,5 @@
 <<<<<<< HEAD
+
 # Synth Guru E-Commerce Application
 
 This is an e-commerce site to sell digital audio samples and synth presets libraries. Created with React.js, Express.js and Stripe API.
@@ -42,4 +43,5 @@ Here are some shots of the mobile / resposive screens
 # Synth-Guru-2.0
 
 This is the backup of my previous repository for the Synth Guru website. Made with React.js and Stripe API.
->>>>>>> ad25b76e73b57987cce8926fd7d6b6c488f4202d
+
+> > > > > > > ad25b76e73b57987cce8926fd7d6b6c488f4202d
