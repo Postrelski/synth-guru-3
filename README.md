@@ -45,3 +45,4 @@ Here are some shots of the mobile / resposive screens
 This is the backup of my previous repository for the Synth Guru website. Made with React.js and Stripe API.
 
 > > > > > > > ad25b76e73b57987cce8926fd7d6b6c488f4202d
+# synth-guru-3
