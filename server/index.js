@@ -7,24 +7,12 @@ const path = require("path");
 
 const app = express();
 
-// CORS Configuration
-const whitelist = [
-  "http://localhost:3000",
-  "http://localhost:8080",
-  "https://calm-caverns-34597-37cce735fe7d.herokuapp.com",
-];
+// Loose CORS Configuration
 const corsOptions = {
-  origin: function (origin, callback) {
-    console.log("** Origin of request " + origin);
-    console.log("here is the callback: " + callback);
-    if (!origin || whitelist.indexOf(origin) !== -1) {
-      console.log("Origin acceptable");
-      callback(null, true);
-    } else {
-      console.log("Origin rejected");
-      callback(new Error("Not allowed by CORS"));
-    }
-  },
+  origin: true, // Allow all origins
+  methods: ["GET", "POST", "PUT", "DELETE"], // Allow all common methods
+  allowedHeaders: ["Content-Type", "Authorization"], // Allow common headers
+  credentials: true // Allow cookies to be sent
 };
 
 // Apply CORS middleware
