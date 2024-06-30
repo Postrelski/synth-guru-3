@@ -33,7 +33,7 @@ function Cart() {
 
   // Call to backend Stripe API
   const checkout = async () => {
-    await fetch("http://localhost:4000/checkout", {
+    await fetch("https://synth-guru-3.vercel.app/checkout", {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
