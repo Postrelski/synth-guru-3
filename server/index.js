@@ -66,8 +66,10 @@ if (process.env.NODE_ENV === "production") {
   });
 }
 
-// Start the server
-const PORT = process.env.PORT || 4000;
-app.listen(PORT, () => {
-  console.log(`Listening on port ${PORT}`);
+// Catch-all route for GET requests
+app.get("*", (req, res) => {
+  res.send("Hello World!");
 });
+
+// Start the server
+app.listen();
